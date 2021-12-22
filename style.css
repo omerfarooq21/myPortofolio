@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Fira+Sans&family=Roboto:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Fira+Sans&family=Roboto:wght@500&family=Source+Code+Pro&display=swap");
+
+:root {
+  --fontfamily: "Fira Sans", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+}
+.sidebar {
+  /* background-color: red; */
+  background-color: lightslategray;
+  width: 10vw;
+  height: 100vh;
+}
+.sidebar nav {
+  padding: 35px;
+}
+
+.sidebar nav li {
+  list-style: none;
+  padding: 20px 0px;
+  font-family: var(--fontfamily);
+  cursor: pointer;
+}
+
+.mainContainer {
+  /* background-color: yellow; */
+  width: 90vw;
+}
+.infoContainer {
+  width: 80vw;
+  margin: 110px auto;
+  display: flex;
+  /* background-color: purple; */
+  height: 45vh;
+  justify-content: space-around;
+}
+
+.devPic img {
+  height: 45vh;
+}
+
+.devInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.buttons button {
+  cursor: pointer;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 5px 7px 5px 7px;
+  border: none;
+  margin-right:10px;
+}
+
+.hello {
+  font-family: var(--fontfamily);
+  font-size: xx-large;
+}
+.name {
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  font-size: xx-large;
+}
+.about {
+  font-family: "Acme", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+}
