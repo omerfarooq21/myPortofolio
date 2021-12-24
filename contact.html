@@ -24,28 +24,44 @@
   
         <div class="mainContainer">
          <div class="contactContainer">
+           
              <form action="">
+                <h2 class="heading">
+                    Feel free to contact us!
+                </h2>
 <div class="contactDetails">
 <label for="email">Enter Your Email: </label>
-    <input type="email" name="email" id="email">
+    <input type="email" name="email" id="email" required>
 
 <label for="query">Why do you want to join us?</label>
     
-  <textarea name="query" id="query" cols="30" rows="10"></textarea>
+  <textarea name="query" id="query" cols="30" rows="10" required></textarea>
+
+<div class="checkBox">
+
+    <label for="check"> I agree to your terms and conditions</label>
+        <input type="checkbox" name="check" id="check" required>
+
+</div>
 
 
-<label for="check"> I agree to your terms and conditions</label>
-    <input type="checkbox" name="check" id="check">
-
-
-
+<button type="submit" class="btn">Submit</button>
 
 </div>
               
 
              </form>
+
+
+             <div class="contactPic">
+                <img src="contact.jpg" alt="contact_pic">
+          
+               </div>    
          </div>
+
+     
       </div>
+
 
 
     <script src="index.js"></script>
