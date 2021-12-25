@@ -15,8 +15,10 @@
 .sidebar {
   /* background-color: red; */
   background-color: lightslategray;
-  width: 250px;
+  width: 200px;
   height: 100vh;
+  position: absolute;
+  transition: transform 0.4s ease-in;
 }
 .sidebar nav {
   padding: 35px;
@@ -74,7 +76,13 @@
   margin-right: 10px;
 }
 
-.buttons button:hover {
+.buttons button a {
+  color: white;
+  text-decoration: none;
+}
+
+.buttons button:hover,
+button a:hover {
   color: var(--btnColor);
   background-color: white;
 }
@@ -107,25 +115,25 @@
   margin-top: 100px;
   display: flex;
   justify-content: space-around;
-  gap: 40px;
+  gap: 80px;
+ 
 }
-.contactPic img{
-object-fit: cover;
-width: 35vw;
-height:70vh;
-border-radius:90px 0px 0px 90px;
+.contactPic img {
+  object-fit: cover;
+  width: 80%;
+  height: 75vh;
+  border-radius: 500px 0px 0px 500px;
 }
 .contactDetails {
   display: flex;
   flex-direction: column;
   font-family: Georgia, "Times New Roman", Times, serif;
   width: 30vw;
-  gap:10px;
+  gap: 10px;
   margin-left: 20px;
 }
 .contactDetails input {
   padding: 5px;
- 
 }
 .contactDetails button {
   width: min-content;
@@ -137,20 +145,63 @@ border-radius:90px 0px 0px 90px;
   background-color: white;
 }
 
-.heading{
-  margin-left:17px;
+.heading {
+  margin-left: 17px;
   font-family: var(--fontfamily);
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
-.checkBox{
+.checkBox {
   display: flex;
-  gap:6px;
+  gap: 6px;
 }
 
-.contactDetails input[type='checkbox']{
-margin-top: 4px;
+.contactDetails input[type="checkbox"] {
+  margin-top: 4px;
 }
 
-#query{
+#query {
   resize: none;
+}
+.navigationSection {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  cursor: pointer;
+  display: flex;
+}
+.hamBurger {
+  cursor: pointer;
+}
+.icon {
+  width: 25px;
+  height: 4px;
+  background: black;
+  margin: 4px 0px;
+}
+
+.cross {
+  margin: 12px 0px 0px 150px;
+ display: none;
+}
+
+.crossicon1 {
+  width: 25px;
+  height: 4px;
+  background-color: black;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.crossicon2 {
+  width: 25px;
+  height: 4px;
+
+  background-color: black;
+  transform: rotate(-45deg);
+  /* position: absolute; */
+}
+
+.sidebarGo{
+transform:translateX(-200px);
+  
 }
